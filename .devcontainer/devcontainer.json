@@ -1,8 +1,6 @@
 {
   "name": "Laradock",
-	"dockerComposeFile": [
-		"../../laradock/docker-compose.yml"
-	],
+  "dockerComposeFile": "../docker-compose.yml",
   "remoteUser": "laradock",
   "runServices": [
     "apache2",
@@ -14,5 +12,6 @@
   "service": "workspace",
   "workspaceFolder": "/var/www",
   "shutdownAction": "stopCompose",
-  "postCreateCommand": "uname -a"
+  "postCreateCommand": "uname -a",
+  "image": "laradock/workspace:latest"
 }
